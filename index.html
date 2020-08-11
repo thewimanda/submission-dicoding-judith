@@ -22,7 +22,7 @@
   <nav>
     <ul>
       <li><a href="#">Home</a></li>
-      <li><a href="#covid19">Covid 19</a></li>
+      <li><a href="#kenalan19">Perkenalan</a></li>
       <li><a href="#berita19">Berita</a></li>
       <li><a href="#penularan19">Penularan</a></li>
       <li><a href="#pencegahan19">Pencegahan</a></li>
@@ -33,7 +33,7 @@
 <main>
   <div id="content">
     <article>
-      <h2 id="covid19">Pengenalan COVID 19</h2>
+      <h2 id="kenalan19">Pengenalan COVID 19</h2>
       <img src="img/covid1.jpg" alt"covid 19">
       <p>Penyakit koronavirus 2019 (bahasa Inggris: <i>coronavirus disease 2019, disingkat COVID-19</i> adalah penyakit menular yang disebabkan oleh SARS-CoV-2, salah satu jenis koronavirus. Penyakit ini mengakibatkan pandemi koronavirus 2019–2020. Penderita COVID-19 dapat mengalami demam, batuk kering, dan kesulitan bernapas. Sakit tenggorokan, pilek, atau bersin-bersin lebih jarang ditemukan. Pada penderita yang paling rentan, penyakit ini dapat berujung pada pneumonia dan kegagalan multiorgan.<br><br><em>sumber : wikipedia.org</em></p>
     </article>
@@ -75,22 +75,22 @@
   <aside>
     <h1>TENTANG</h1>
     <img src="img/fotoprofil.jpg" alt="foto">
-    <h4>Judithya Dwimanda</h4>
-    <h5>Seorang Internal Auditor sebuah perusahaan swasta yang terkena dampak Covid-19</h5>
+    <h3>&lt; Judithya Dwimanda &gt;</h3>
+    <h5>&quot; Seorang Internal Auditor sebuah perusahaan swasta yang terkena dampak Covid-19 &quot;</h5>
     <h1>SALAM</h1>
-    <p>Selamat datang di halaman submission Dicoding saya. Dimana saya masih belajar untuk membuat layout halaman web menggunakan HTML, CSS dan Javascript. Sumber gambar diambil dari <a href="http://freepik.com" target="_blank">freepik</a> dan <a href="http://unsplash.com" target="_blank">unsplash</a>. Untuk warna referensinya dari <a href="http://coolors.co" target="_blank">coolors.co</a></p>
+    <p>Selamat datang di halaman submission Dicoding saya. Dimana saya masih belajar untuk membuat layout halaman web menggunakan HTML, CSS dan Javascript. Sumber gambar diambil dari <a href="http://freepik.com" target="_blank">freepik</a> dan <a href="http://unsplash.com" target="_blank">unsplash</a>. Untuk warna referensinya dari <a href="http://coolors.co" target="_blank">coolors.co</a>. Manipulasi DOM dengan Javascript, saya gunakan untuk scroll ke atas halaman.</p>
     <p>Tema dari halaman ini adalah tentang Covid-19. Untuk pelaporan atau pertanyaan lebih lanjut mengenai covid-19, bisa mengisi form dibawah ini :</p>
     <h1>KOTAK FORM</h1>
     <form>
-      <label for="nama">Nama</label><br>
-      <input type="text" id="nama"><br>
-      <label for="email">Email</label><br>
-      <input type="email" id="email"><br>
-      <label for="pesan">Pesan</label><br>
-    <textarea name="pesan" rows="10" cols="30">permisi, pak/ibu. saya ada pesan. jadi gini.. </textarea><br>
-      <input type="submit" value="submit">
+      <label for="nama-form">Nama</label><br>
+      <input type="text" id="nama-form">
+      <label for="email-form">Email</label><br>
+      <input type="email" id="email-form">
+      <label for="pesen-form">Pesan</label><br>
+      <textarea id="pesen-form" rows="5"
+cols="50"></textarea>
+<input onclick="tombolForm()" type="submit" value="submit">
     </form>
-    <p><i>*form tidak berfungsi</i></p>
   </aside>
 </main>
 
@@ -98,6 +98,7 @@
   <p>Copyright &copy; 2020 Judith</p>
 </footer>
 
+<button onclick="naikKeatas()" id="top" title="balik lagi ke atas">↑↑↑</button>
 <!-- script JS -->
 <script src="script.js"></script>
 </body>

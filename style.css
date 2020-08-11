@@ -54,6 +54,7 @@ nav li a {
   text-decoration: none;
   text-align: center;
   color: #6F5B47;
+  font-weight: bold;
 }
 
 nav li:hover {
@@ -155,7 +156,7 @@ aside img {
   object-fit: cover;
 }
 
-aside h4, aside h5 {
+aside h3, aside h5 {
   text-align: center;
 }
 
@@ -200,6 +201,26 @@ footer {
   color: #F8F7FF;
 }
 
+/* back to top */
+#top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 25px;
+  padding: 15px;
+  background-color: #393939;
+  color: #D3D3D3;
+  font-size: 14px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  opacity: 0.9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
 /* mobile */
 
 @media screen and (max-width: 800px) {
@@ -225,7 +246,7 @@ footer {
     height: 3px;
   }
 
-nav ul::-webkit-scrollbar-thumb {
+  nav ul::-webkit-scrollbar-thumb {
   height: 10px;
   background-color: #9381FF;
   }
@@ -257,4 +278,5 @@ nav ul::-webkit-scrollbar-thumb {
   aside h1::after {
     margin: 1em auto;
   }
+  
 }
