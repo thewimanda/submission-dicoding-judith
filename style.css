@@ -15,6 +15,9 @@ body {
   color: #545454;
   margin: 0;
   padding: 0;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
 }
 
 .top-head {
@@ -33,14 +36,14 @@ body {
 
 /* navigasi */
 
+
 nav ul {
+  display: flex;
+  flex-direction: row;
   list-style-type: none;
   background-color: #FFD8BE;
   margin: 0;
   height: 55px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5)  ; 
 }
 
@@ -69,14 +72,15 @@ main {
   margin: 10px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 /* artikel */
 
 #content {
-  margin: 0;
+  margin: 5px;
   padding: 10px;
-  width: 63%;
+  flex: 70%;
 }
 
 article {
@@ -134,12 +138,12 @@ section img {
 /* sidebar */
 
 aside {
-  width: 32%;
   text-align: justify;
-  margin: 0 auto;
+  margin: 5px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.1)  ;
+  flex: 30%;
 }
 
 aside a {
@@ -199,6 +203,7 @@ footer {
   padding: 7px;
   text-align: center;
   color: #F8F7FF;
+  width: 100%;
 }
 
 /* back to top */
@@ -224,15 +229,15 @@ footer {
 /* mobile */
 
 @media screen and (max-width: 768px) {
-  
+
   main {
     flex-direction: column;
   }
-  
+
   #content, aside {
-    width: 100%;
+    flex-basis: 100%;
   }
- 
+
   nav ul {
     width: 100%;
     padding: 0;
@@ -250,7 +255,7 @@ footer {
   height: 10px;
   background-color: #9381FF;
   }
-  
+
   section {
     flex-direction: column;
   }
